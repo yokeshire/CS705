@@ -14,7 +14,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *label;
 
-- (IBAction)changeGreeting:(id)sender;
+//- (IBAction)changeGreeting:(id)sender;
+- (IBAction)keyboardDone:(UITextField *)sender;
 
 @end
 
@@ -32,9 +33,27 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)changeGreeting:(id)sender {
+//- (IBAction)changeGreeting:(id)sender {
     
     
+  //  self.userName = self.textField.text;
+    
+    
+    
+    //NSString *nameString = self.userName;
+    
+    //if ([nameString length] == 0) {
+        
+        //nameString = @"World";
+        
+    //}
+    
+   // NSString *greeting = [[NSString alloc] initWithFormat:@"Hello, %@!", nameString];
+    
+    //self.label.text = greeting;
+//}
+
+- (IBAction)keyboardDone:(UITextField *)sender {
     self.userName = self.textField.text;
     
     
@@ -44,12 +63,12 @@
     if ([nameString length] == 0) {
         
         nameString = @"World";
-        
     }
     
     NSString *greeting = [[NSString alloc] initWithFormat:@"Hello, %@!", nameString];
     
     self.label.text = greeting;
+
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)theTextField {
