@@ -1,14 +1,14 @@
 //
-//  gAppDelegate.m
+//  HelloWorldAppDelegate.m
 //  HelloWorld
 //
-//  Created by Jacob Ulrich on 1/17/13.
-//  Copyright (c) 2013 Jacob Ulrich. All rights reserved.
+//  Created by Jacob Ulrich on 1/21/13.
+//  Copyright (c) 2013 co e.Edu. All rights reserved.
 //
 
-#import "gAppDelegate.h"
+#import "HelloWorldAppDelegate.h"
 
-@implementation gAppDelegate
+@implementation HelloWorldAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

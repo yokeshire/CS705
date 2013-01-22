@@ -1,14 +1,14 @@
 //
-//  gViewController.m
+//  HelloWorldViewController.m
 //  HelloWorld
 //
-//  Created by Jacob Ulrich on 1/17/13.
-//  Copyright (c) 2013 Jacob Ulrich. All rights reserved.
+//  Created by Jacob Ulrich on 1/21/13.
+//  Copyright (c) 2013 co e.Edu. All rights reserved.
 //
 
-#import "gViewController.h"
+#import "HelloWorldViewController.h"
 
-@interface gViewController ()
+@interface HelloWorldViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 
@@ -16,10 +16,9 @@
 
 - (IBAction)changeGreeting:(id)sender;
 
-
 @end
 
-@implementation gViewController
+@implementation HelloWorldViewController
 
 - (void)viewDidLoad
 {
@@ -33,9 +32,12 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)changeGreeting:(UIButton *)sender {
+- (IBAction)changeGreeting:(id)sender {
+    
     
     self.userName = self.textField.text;
+    
+    
     
     NSString *nameString = self.userName;
     
